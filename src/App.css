@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: start;
   width: 520px;
+  max-width: 90%;
   min-height: 600px;
   background: #161a2b;
   text-align: center;
@@ -48,6 +49,7 @@ h1 {
   border: 2px solid #5d0cff;
   outline: none;
   width: 320px;
+  max-width: 90%;
   background: transparent;
   color: #fff;
 }
@@ -152,4 +154,20 @@ h1 {
 
 .edit-icon {
   color: #fff;
+}
+
+@media screen and (max-width: 468px) {
+  .todo-form {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    height: 52px;
+  }
+  .todo-button {
+    display: flex;
+    align-items: center;
+  }
+  h1 {
+    font-size: 22px;
+  }
 }

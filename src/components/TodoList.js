@@ -59,10 +59,10 @@ function TodoList({
       {todos.map((todo, index) => (
         <Todo
           todo={todo}
-          index={index}
           completeTodo={completeTodo}
           removeTodo={removeTodo}
           updateTodo={updateTodo}
+          key={index}
         />
       ))}
     </div>
