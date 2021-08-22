@@ -1,0 +1,75 @@
+.table {
+  flex: 1;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr {
+  position: relative;
+}
+
+tr > td > input[type="checkbox"] {
+  float: left;
+  margin-left: 0.8rem;
+  margin-top: 0.8rem;
+  margin-right: -2.7rem;
+  width: 1.5rem;
+}
+
+th,
+td {
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  max-width: 80px;
+}
+
+table > tbody > tr:nth-child(1) > th {
+  cursor: pointer;
+  background-color: rgb(167, 167, 167);
+  color: #fafafa;
+  opacity: 0.7;
+}
+
+th.selected {
+  background-color: #fba91a !important;
+  opacity: 1 !important;
+}
+
+.table__initial-line > td {
+  border: none;
+  height: 100%;
+  padding: 0.6rem;
+}
+
+.table__initial-line > td:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table__initial-line > td > .add {
+  fill: #fba91a;
+  cursor: pointer;
+}
+
+.table__initial-line > td > .dots {
+  fill: #333;
+}
+
+.table__initial-line > td:first-of-type {
+  display: flex;
+  align-items: center;
+  padding-left: 1.2rem;
+}

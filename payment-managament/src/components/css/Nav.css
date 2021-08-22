@@ -1,0 +1,22 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 0 1rem;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signout {
+  cursor: pointer;
+}
+.nav > p {
+}
+.nav > a {
+  color: #fafafa;
+  line-height: 0;
+}
